@@ -1,0 +1,45 @@
+.advantages {
+    display: flex;
+    margin-top: 100px;
+}
+
+.advantages-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+    width: 100%;
+}
+
+.advantages-list-item{
+    text-align: center;
+}
+
+.advantages-list-item h6{
+    color: var(--darkText);
+    font-weight: 700;
+    margin: 30px 0 20px 0;
+    text-transform: uppercase;
+}
+
+.advantages-list-item p{
+    color: var(--lightText);
+}
+
+@media screen and (max-width: 980px) {
+    .advantages-list {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .advantages-list-item{
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .advantages-list-item{
+        width: 100%;
+    }    
+}

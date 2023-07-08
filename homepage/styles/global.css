@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
+
+:root {
+    --orange: #1ea3ea;
+    --darkText: #505153;
+    --lightText: #343436;
+    --lightGray: #C7CBCE;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+   padding: 0;
+   font-weight: normal;
+}
+
+h1 {
+    font-size: 46px;
+}
+  
+h2 {
+    font-size: 30px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  h4 {
+    font-size: 20px;
+  }
+  
+  h5 {
+    font-size: 18px;
+  }
+  
+  h6 {
+    font-size: 14px;
+  }
+
+  button {
+    font-weight: normal;
+    cursor: pointer;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+.page-content-wrapper {
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+.social-link {
+  padding: 10px 12px 7px 12px;
+  border: 1px solid var(--lightGray);
+  margin-right: 5px;
+}
+
+.social-icon {
+  color: var(--lightGray);
+}
+
+.social-icon--linedIn {
+  padding: 2px 3px;
+  background-color: var(--lightGray);
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .page-content-wrapper{
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  h1{
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  a{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  h1{
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  h5 {
+    font: 12px;
+  }
+
+  a{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1{
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  h5 {
+    font: 10px;
+  }
+
+  a{
+    font-size: 9px;
+  }
+}
+

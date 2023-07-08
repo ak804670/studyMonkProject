@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Candidate Search</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Candidate Search</h1>
+    <form action="/search" method="GET">
+      <input type="text" name="location" placeholder="Location">
+      <input type="text" name="job_role" placeholder="Job Role">
+      <button type="submit">Search</button>
+    </form>
+    <div class="results">
+      <ul>
+        {% for candidate in candidates %}
+          <li>
+            <a href="/candidate/{{ candidate.id }}">
+              {{ candidate.name }}
+            </a>
+            <p>{{ candidate.location }}</p>
+            <p>{{ candidate.job_role }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
